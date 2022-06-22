@@ -1,4 +1,4 @@
-package lgm.com.gof;
+package lgm.com.gof.singleton;
 
 /**
  *  Singleton "preguiçoso"

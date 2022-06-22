@@ -1,22 +1,19 @@
-package lgm.com.gof;
+package lgm.com.gof.singleton;
 
 /**
- *  Singleton "preguiçoso"
+ *  Singleton "Apressado"
  *
  * @author liviagoncalves
  */
 public class SingletonEager {
 
-    private static SingletonEager instancia;
+    private static SingletonEager instancia = new SingletonEager();
 
     private SingletonEager() {
         super();
     }
 
     public static SingletonEager getInstancia() {
-        if (instancia  == null) {
-            instancia = new SingletonEager();
-        }
         return instancia;
     }
 }
